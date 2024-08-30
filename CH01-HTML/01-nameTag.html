@@ -1,0 +1,205 @@
+<!-- coment : sài "ctrl + /" -->
+
+<!-- 
+HTML: hyper text markup language :
+đây là ngôn ngữ đánh dấu siêu văn bản 
+đây ko phải là ngôn ngữ lập trình
+-->
+
+<!-- document : muốn hiển thị tài liệu như một trang web
+    thì cần chạy trên nền tảng là web page (web brower)
+    
+    -->
+
+    <!-- 
+    trong html  ,các thành phần đều là tag | thẻ 
+    trong cấu trúc của 1 tag là :
+    <tagname attribute> content </tagName>
+        trong đó <tagname> : tag mở 
+                 </tagName>: tag đóng 
+                 và ở giữa hai đó thì có content | nội dung 
+    
+    html xml jsd jsp pug  
+    -->
+    <!DOCTYPE html>
+    <html lang="vi" style="scroll-behavior: smooth;;">
+        <!-- head là nơi chứa tài nguyên người dùng sẽ ko thấy phần head -->
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bài số 1 : name tag</title>
+        </head>
+        <body>
+            <!-- bộ heading 
+            * trong html , người ta thường đặt tên các tag(hay là thẻ) dựa trên chức năng của nó  
+        -->
+            <h1>Anh Điệp đẹp trai quá</h1>
+            <h2>I.Phân tích vẽ đẹp trai của anh Điệp</h2>
+            <h3>I.1 Đôi mắt của người đàn ông nhiều tiền</h3>
+            <h3>I.2 Nụ cười của tri thức trong bóng tối thời đại</h3>
+            <!-- có tất cả có 6 thẻ h : h1 h2 h3 h4 h5 h6
+             số cần lớn thì chữ càng nhỏ 
+             thẻ h thường dùng làm tilte , đầu mục
+             -->
+
+             <!-- 
+             các thẻ heading đều có display là block : rất quan trọng
+             block là thẻ mà chiếm trọn 1 hàng , ko có thẻ nào cùng hàng với nó đc 
+             inline-block : là thẻ có khối  | block bao gọn content mà thôi
+            -->
+             <h5 style="display: inline-block;">người đẹp trai nhất</h5>
+             <h6 style="display: inline-block;">là anh Điệp</h6>
+
+             <!-- p : paragrahphs : đoạn văn : block -->
+             
+            <p>
+                Tôi tên là &#8194;&#8194;&#8194;&#8194;&#8194; Điệp , nhà tôi ở quận 9 <br />
+               <!-- để xuống hàng , ta dùng thẻ <br /> : viết tắt là breakline
+                có nghĩa là xuống hàng 
+                 -->
+                3 đời nhà tôi làm gỗ , đến đời tôi thì làm yang hồ
+            </p>
+            <!--  -->
+            <!-- pre : preformated 
+                là thẻ khi ta để một văn bản nào thì nó sẽ  hiển thị chính xác những gì , 100% những gì
+                mà chúng ta nhập vào 
+                ko nên sài vì nếu phóng to phóng nhỏ sẽ bị hở sườn
+                 <pre>
+ Tôi tên là Điệp , nhà tôi ở quận 9
+ 3 đời nhà tôi làm gỗ , đến đời tôi thì làm yang hồ
+            </pre>
+             -->
+           
+            <!-- hầu hết các thẻ mà mình dùng đều có thuộc tính style
+                text-align : căn lề cho text của thẻ  
+                &#8194; : dấu cách 
+            -->
+                <p style = "text-align :center";> demo text-align với block</p>
+                <p style = "display : inline-block">
+                    demo text-align với inline-block</p>
+            <!-- tag formating : bộ tượng hình -->
+             <p> <em>xin chào</em> <small>các bạn</small>  , <del>tao</del> 
+                 <strong>tôi</strong>  là <mark> Điệp đẹp trai </mark>
+                 </p>
+             <!-- i : italic : nghiên | em : emphasized : nhấn mạnh 
+                  b : bold : đậm      | strong : mạnh mẽ , quan trọng
+                  small : nhỏ         |-->
+
+             <p>H<sub>2</sub>0:nước </p>
+             <p>ax<sup>2</sup> + bx + c = 0 </p>
+             <!-- sub : để chữ ở dưới
+                  sup : để chữ ở trên ==> cho những số mũ 
+                  trong thực tế , thì chỉ có block và line 
+                  ko có inline-block  (do inline-block là do mình modifer lại)
+                  hay nói cách khác : inline : thẻ chỉ có content , ko có hộp (Ko cso viền - block)                  
+                  -->
+
+            <!-- pseudo tag : tag giả|the mà ko có chức năng
+                 span : display inline
+                 div :  display block
+                 tối đa là 16px 
+                 -->
+             <p><span style="font-size: 30px; text-decoration: line-through; color: red;"
+                >x</span
+                >in chào bạn hiền
+            </p>
+            
+            <!-- demo div -->
+             <div style="color:  green;">
+                <p>người giàu sống tình cảm </p>
+                <p>ai cũng có thể trở nên giàu có</p>
+                <p>nếu như ba má họ giàu sẵn</p>
+             </div>
+
+
+             <div style="text-align: left; color: red;">
+                <p>
+                    Lòng ta trống lắm, lòng ta sụp  <br />                
+                    Như túp nhà không bốn vách xiêu;  <br />
+                    Em chẳng cứu giùm, em bỏ mặc <br />
+                    Mưa đưa ta đến bến Đìu hiu.
+                </p>
+             </div>
+
+            <div style="text-align: right; color :blue;">
+                <p> 
+                Em ở bên mình; ta ngó say, <br />
+                Song le bên ấy với bên này <br />
+                Cũng xa như những bờ xa cách, <br />
+                Không có thuyền qua, không cánh bay.
+                </p>
+            </div>
+
+            <div style="text-align: left; color: red;">
+               <p>
+                Ta thấy em xinh, khẽ lắc đầu. <br />
+                Bởi vì ta có được em đâu! <br />
+                Tay kia sẽ ấp nhiều tay khác, <br />
+                Môi ấy vì ai sẽ đượm mầu.
+               </p>
+            </div>
+            <!-- a: hyper link references - link : inline -->
+            <p><a href="https://www.google.com/" target="_blank" 
+                style="color: black; 
+                text-decoration: none;
+                cursor:default; " 
+                >dẫn đến tri thức</a></p>
+
+         
+                <!-- a : bookmark -->
+                <p><a href="#khobau111">đường đến kho báu</a></p>
+
+                <p>
+                    Trong hơn 13 năm giữ trọng trách cao nhất của Đảng, Nhà nước, Tổng bí thư Nguyễn Phú Trọng đã để lại nhiều di sản lớn với tư tưởng nhất quán: Lấy con người, lấy nhân dân làm chủ thể phụng sự xuyên suốt cả cuộc đời và sự nghiệp.
+
+Cố Tổng bí thư Nguyễn Phú Trọng gia nhập hàng ngũ Đảng Cộng sản Việt Nam khi là một thanh niên 23 tuổi, vừa tốt nghiệp khoa Ngữ văn, Đại học Tổng hợp Hà Nội. Gần 6 thập kỷ kể từ đó, ông cống hiến trọn vẹn cho sự nghiệp của Đảng và dân tộc, với khát vọng bền bỉ xây dựng Nhà nước pháp quyền xã hội chủ nghĩa của dân, do dân, vì dân.
+
+Lý tưởng ấy song hành cùng ông đến tận cuối đời, kể cả những ngày trên giường bệnh. Ở tuổi 80, Tổng bí thư vừa điều hành công việc của Đảng, vừa điều trị, chăm sóc sức khỏe tại Bệnh viện Trung ương Quân đội 108 - nơi ông trút hơi thở cuối cùng vào 13h38 ngày 19/7.
+
+"Xuyên suốt trong tư tưởng của đồng chí Nguyễn Phú Trọng là Nhân dân, là con người, là hết lòng, hết sức phục vụ nhân dân, lấy Nhân dân là chủ thể, trung tâm của công cuộc đổi mới", Chủ tịch nước Tô Lâm đúc kết trong bài viết về cuộc đời cách mạng của Tổng bí thư Nguyễn Phú Trọng.
+
+Trong 57 năm cống hiến, ông Nguyễn Phú Trọng có hơn 13 năm giữ chức Tổng bí thư, gần ba năm kiêm chức Chủ tịch nước, hai khóa là Chủ tịch Quốc hội. Cố Tổng bí thư để lại dấu ấn trong mọi mặt - chính trị, ngoại giao, kinh tế, văn hoá - trở thành hình mẫu về phong cách sống bình dị cho các thế hệ đảng viên, nhân dân.
+
+Giữ "lò" nóng để giữ lòng dân
+"Trong suốt cuộc đời hoạt động cách mạng của mình, công tác Đảng và xây dựng Đảng chiếm vị trí đặc biệt quan trọng đối với đồng chí Nguyễn Phú Trọng", Chủ tịch nước Tô Lâm viết.
+
+
+Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận, ngày 10/5/2024. Ảnh Tư liệu
+
+Tổng bí thư luôn trăn trở với công tác tư tưởng của Đảng, coi trọng tổng kết thực tiễn để bổ sung, hoàn thiện lý luận về con đường đi lên chủ nghĩa xã hội ở Việt Nam. Kho tàng nghiên cứu của ông đã được thể hiện trong 35 đầu sách, cụ thể hóa tư tưởng Hồ Chí Minh thời kỳ đổi mới về đầy đủ các lĩnh vực: Xây dựng chủ nghĩa xã hội, phòng chống tham nhũng, bảo vệ Tổ quốc từ sớm từ xa, ngoại giao, văn hóa, Quốc hội...
+
+Nổi bật trong số đó là cuốn Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam ra mắt năm 2022, nêu hàng loạt vấn đề mang tính hệ tư tưởng như: Chủ nghĩa xã hội là gì? Vì sao Việt Nam phải lựa chọn con đường xã hội chủ nghĩa? Làm thế nào và bằng cách nào để từng bước xây dựng được chủ nghĩa xã hội ở Việt Nam? Thực tiễn công cuộc đổi mới, đi lên chủ nghĩa xã hội ở Việt Nam thời gian qua có ý nghĩa gì và đặt ra vấn đề gì?
+
+Theo Tổng bí thư, xã hội chủ nghĩa là nơi sự phát triển thực sự vì con người, phát triển kinh tế đi đôi với tiến bộ và công bằng xã hội; xã hội nhân ái, đoàn kết, tương trợ lẫn nhau, hướng tới các giá trị tiến bộ, nhân văn. Sự phát triển phải bền vững, hài hòa với thiên nhiên để bảo đảm môi trường sống trong sạch cho các thế hệ hiện tại và tương lai. Hệ thống chính trị phải đảm bảo quyền lực thực sự thuộc về nhân dân, do nhân dân và phục vụ lợi ích của nhân dân.
+
+Để đất nước đạt được mục tiêu đó, ông nhiều lần nhấn mạnh vai trò lãnh đạo của Đảng và công tác xây dựng Đảng có ý nghĩa then chốt. Chủ nghĩa cá nhân cần được quét sạch và mỗi đảng viên phải xem "danh dự mới là điều thiêng liêng nhất".
+Trong hơn 13 năm giữ trọng trách cao nhất của Đảng, Nhà nước, Tổng bí thư Nguyễn Phú Trọng đã để lại nhiều di sản lớn với tư tưởng nhất quán: Lấy con người, lấy nhân dân làm chủ thể phụng sự xuyên suốt cả cuộc đời và sự nghiệp.
+
+Cố Tổng bí thư Nguyễn Phú Trọng gia nhập hàng ngũ Đảng Cộng sản Việt Nam khi là một thanh niên 23 tuổi, vừa tốt nghiệp khoa Ngữ văn, Đại học Tổng hợp Hà Nội. Gần 6 thập kỷ kể từ đó, ông cống hiến trọn vẹn cho sự nghiệp của Đảng và dân tộc, với khát vọng bền bỉ xây dựng Nhà nước pháp quyền xã hội chủ nghĩa của dân, do dân, vì dân.
+
+Lý tưởng ấy song hành cùng ông đến tận cuối đời, kể cả những ngày trên giường bệnh. Ở tuổi 80, Tổng bí thư vừa điều hành công việc của Đảng, vừa điều trị, chăm sóc sức khỏe tại Bệnh viện Trung ương Quân đội 108 - nơi ông trút hơi thở cuối cùng vào 13h38 ngày 19/7.
+
+"Xuyên suốt trong tư tưởng của đồng chí Nguyễn Phú Trọng là Nhân dân, là con người, là hết lòng, hết sức phục vụ nhân dân, lấy Nhân dân là chủ thể, trung tâm của công cuộc đổi mới", Chủ tịch nước Tô Lâm đúc kết trong bài viết về cuộc đời cách mạng của Tổng bí thư Nguyễn Phú Trọng.
+
+Trong 57 năm cống hiến, ông Nguyễn Phú Trọng có hơn 13 năm giữ chức Tổng bí thư, gần ba năm kiêm chức Chủ tịch nước, hai khóa là Chủ tịch Quốc hội. Cố Tổng bí thư để lại dấu ấn trong mọi mặt - chính trị, ngoại giao, kinh tế, văn hoá - trở thành hình mẫu về phong cách sống bình dị cho các thế hệ đảng viên, nhân dân.
+
+Giữ "lò" nóng để giữ lòng dân
+"Trong suốt cuộc đời hoạt động cách mạng của mình, công tác Đảng và xây dựng Đảng chiếm vị trí đặc biệt quan trọng đối với đồng chí Nguyễn Phú Trọng", Chủ tịch nước Tô Lâm viết.
+
+
+Những ngày cuối đời tại Bệnh viện 108, cố Tổng bí thư Nguyễn Phú Trọng vẫn vừa điều trị bệnh, vừa nghiên cứu lý luận, ngày 10/5/2024. Ảnh Tư liệu
+
+Tổng bí thư luôn trăn trở với công tác tư tưởng của Đảng, coi trọng tổng kết thực tiễn để bổ sung, hoàn thiện lý luận về con đường đi lên chủ nghĩa xã hội ở Việt Nam. Kho tàng nghiên cứu của ông đã được thể hiện trong 35 đầu sách, cụ thể hóa tư tưởng Hồ Chí Minh thời kỳ đổi mới về đầy đủ các lĩnh vực: Xây dựng chủ nghĩa xã hội, phòng chống tham nhũng, bảo vệ Tổ quốc từ sớm từ xa, ngoại giao, văn hóa, Quốc hội...
+
+Nổi bật trong số đó là cuốn Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường<span id = "khobau111">kho ban My lan ne </span> đi lên chủ nghĩa xã hội ở Việt Nam ra mắt năm 2022, nêu hàng loạt vấn đề mang tính hệ tư tưởng như: Chủ nghĩa xã hội là gì? Vì sao Việt Nam phải lựa chọn con đường xã hội chủ nghĩa? Làm thế nào và bằng cách nào để từng bước xây dựng được chủ nghĩa xã hội ở Việt Nam? Thực tiễn công cuộc đổi mới, đi lên chủ nghĩa xã hội ở Việt Nam thời gian qua có ý nghĩa gì và đặt ra vấn đề gì?
+
+Theo Tổng bí thư, xã hội chủ nghĩa là nơi sự phát triển thực sự vì con người, phát triển kinh tế đi đôi với tiến bộ và công bằng xã hội; xã hội nhân ái, đoàn kết, tương trợ lẫn nhau, hướng tới các giá trị tiến bộ, nhân văn. Sự phát triển phải bền vững, hài hòa với thiên nhiên để bảo đảm môi trường sống trong sạch cho các thế hệ hiện tại và tương lai. Hệ thống chính trị phải đảm bảo quyền lực thực sự thuộc về nhân dân, do nhân dân và phục vụ lợi ích của nhân dân.
+
+Để đất nước đạt được mục tiêu đó, ông nhiều lần nhấn mạnh vai trò lãnh đạo của Đảng và công tác xây dựng Đảng có ý nghĩa then chốt. Chủ nghĩa cá nhân cần được quét sạch và mỗi đảng viên phải xem "danh dự mới là điều thiêng liêng nhất".
+                </p>
+                <a href="#">Yêu cầuz</a>
+            <!-- tạo một href
+                trong văn bản , tạo 1 id 
+                sao cho trùng vs href trùng ở trên -->
+        </body>
+    </html>

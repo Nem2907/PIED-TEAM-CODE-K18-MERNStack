@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Roboto Condensed", sans-serif; 
+    /* font-weight: 100; */
+}
+body{
+    font-size: 1.6rem;
+}
+/* demo flex */
+.cha{
+    border: 3px solid black;
+    display: flex;
+}
+.con1{
+    border: 3px solid red;
+    width: 10rem;
+    height: 10rem;
+    justify-content: ;
+    ali
+}
+.con2{
+    border: 3px solid blue;
+    width: 10rem;
+    height: 10rem;
+}   
+/*  */
+.chu{
+    border : 3px solid black;
+    display: flex;
+}
+.chau{
+    border : 3px solid red;
+    width: calc(100%-30rem);
+}
+.chac{
+    border : 3px solid blue;
+}
+/* demo position */
+.big-div{
+    border: 3px solid green;
+    width: 25rem;
+    position: relative;
+}
+.small-div{
+    border: 3px solid blue;
+    background-color: aqua;
+    position: absolute;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    /* chỉ có positon mới sử dụng đc z-index
+    và những tk khác ko được */
+
+    /* absolute : tương đối , thoát toàn bộ khỏi cha
+                và nằm đè lên cha nó luôn
+                nó sẽ căng chỉnh vị trí theo cha nó luôn
+        hình ảnh : con người nhảy ra ngoài cửa sổ 
+        hay còn đc xem là float 
+        nó sẽ đi tìm cha của nó NHƯNG nó sẽ ko đi với
+        (dựa vào) những đứa STATIC
+    */
+   /* position: relative; */
+   /* top: 5rem;
+   left: 2rem; */
+   /* static là bất động , tĩnh , mặc định của các thẻ
+      relative : xuất hồn : bỏ lại xác còn hồn thì đí
+                nó sẽ căng chỉnh vị trí so với xác ban đâu
+                ==> chính là static
+        và cị trí sẽ được so với chính nó 
+   */
+
+}
+/* .demo-sticky{
+    position: sticky;
+    top: 0;
+    
+} */
+.btn-fb{
+    border: 3px solid black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    /* fixed : cố định vật thể với màn hình của mình
+
+    */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* pseudo tag : span và div 
+    pseudo class : link status : unvisited | visited | actice | hover | forcus
+    pseudo element : ::after và ::before 
+*/
+.ahihi::before{
+    content: "hihi";
+}
+.ahihi::after{
+    content: "huhu";
+}
+/* demo button cực cháy cực cang, cực gắt */
+.demo-btn{
+    margin: 3rem;
+    padding: 1rem;
+    border: 1px solid hotpink;
+    background-color: transparent;
+    color: hotpink;
+    position: relative;
+    /*  */
+}
+.demo-btn::after{
+    content: "";
+    background-color: hotpink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.3s;
+}
+.demo-btn:hover::after{
+    left: 0;
+    width: 100%;
+}
+.demo-btn:hover{
+    color: white;
+}
+
+/* đặc điểm 2 cái after và before là 2 cái này đều không sài được
+    và 2 đứa này là con của class ahihi
+*/

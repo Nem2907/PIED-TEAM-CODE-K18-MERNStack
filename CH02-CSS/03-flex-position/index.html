@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 : Flex và position </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- font  -->
+    <!-- cách kiếm font :kiếm gg font và ghi :
+      Tình nghĩa anh em có chắc bền lâu , ngẫu nhiên mình lìa xa
+      để kiếm font đẹp -->
+    <p>
+        Quang Trung Nguyễn Huệ là 2 anh em , đó là người nào nói vậy <br />
+        còn tôi thì họ là một người duy nhất
+    </p>
+    <div class="demo-sticky">Tôi là Sticky</div>
+    <!-- flex
+        :
+        cách 1 : inline - block + font-size
+        cách 2 :float + clearfix ==> ko fix theo chiều cao đc 
+        2015 : flex | Grid Jqery
+        Grid : 12 col chia nhau ra để hợp img
+        Flex  " thay thế cho các cách chia layout cũ "
+        khảo bài boost trap
+
+        -->
+
+
+        <!-- flex được chia làm 2 trục 
+            có trục chính là justify 
+                trục phụ : align
+                                |
+                                |
+                                |
+                                |
+            Start               |               end
+        _______________________________________________
+                                |
+                                |
+                                |
+                                |
+                                |
+                                |
+
+            content : điều khiển những cái khe , khoảng hở 
+            giữa các khối items
+            flex-start: Các hạng mục sẽ được sắp xếp về phía bên trái của hộp chứa.
+flex-end: Các hạng mục sẽ được sắp xếp về phía bên phải của hộp chứa.
+center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+space-between: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau giữa chúng.
+space-around: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng.
+
+            items : điểu khiển cả khỗi và các items cùng nhau
+            dịch chuyển
+            align-seft : ko được dùng ở div cha
+        -->
+
+        <!-- 
+         flex-wrap, thuộc tính này chấp nhận các giá trị sau:
+
+nowrap: Mỗi hạng mục được dồn vào một hàng duy nhất.
+wrap: Các hạng mục quấn xung quanh để tạo thêm dòng.
+wrap-reverse: Các hạng mục quấn xung quanh để tạo thêm dòng ngược lại.
+
+
+        -->
+        <!-- demo dùng flex cơ bản -->
+        <div class="cha">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+
+            </div>
+        </div>
+    <!-- demo flex lần 2 : -->
+        <div class="chu">
+            <div class="chau">
+                <h1>Anh Cháu rất quý cô Chắc</h1>
+                <p>nhà anh cháu bên trái nhà của cô Chắc</p>
+                <p>mà chắc có vẻ như cô Chắc không mấy thiện cảm với anh Cháu</p>
+            </div>
+            <div class="chac">
+                <h1>Nhà cô Chắc bên phải là của anh Cháu</h1>
+                <p>Cô Chắc biết anh Cháu quý mình</p>
+                <p>Nhưng chắc là Chắc chắn chắn không thích anh Cháu</p>
+                <p>anh Cháu còn chơi với jonny đen với anh Cáo
+                    họ cùng nhau dùng đồng dbrr <br>
+                    anh Cháu dù mặc envisu nhưng hàng kim biên
+                </p>
+            </div>
+        </div>
+
+    <!--  -->
+
+    <!-- demo position -->
+        <div class="big-div">
+            <div class="small-div">Tôi là divv nhỏ</div>
+            <p>Ahihi xin chào cuộc đời <br>
+                dù nhiều lần làm ta chơi vơi <br>
+                tuy học ít nhưng chơi cũng nhiều <br>
+                chiều ăn bánh tối lại vào hang <br>
+                Ahihi xin chào cuộc đời <br>
+                dù nhiều lần làm ta chơi vơi <br>
+            </p>
+        </div>
+        
+        <!-- btn-fb -->
+         <div class="btn-fb">
+            <div class="icon">F</div>
+         </div>
+
+         <!-- pseudo element -->
+          <div class="ahihi">
+            Xin Chào
+        </div>
+          <!-- siêu button cực cháy , cực căng , cực gắt -->
+          <button class="demo-btn">
+                BUTTON
+          </button>
+          <!--  -->
+    <div style="height: 100vh;">
+
+    </div>
+
+</body>
+
+</html>

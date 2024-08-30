@@ -1,0 +1,153 @@
+/* reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.parent{
+    border: 3px solid black;
+}
+.left-side{
+    border:3px solid red;
+    width: 30%;
+    float: left;
+    /* giả sử hiện tại divCha đang giữ divTrai , 
+    và nếu ta sài float thì sẽ trôi đi  */
+}
+.right-side{
+    border: 3px solid blue;
+    width: 30%;
+    float: right ;
+}
+.clearfix::after{   
+    display: block;
+    content: "";
+    clear: both;
+    /* cơ chế : tạo ra phần tử ảo bự = những đứa 
+    bị trôi đi(float) */
+}
+/* 
+    cách 2 :
+        -Xét width theo nhu cầu của mình cho các div
+        con
+        - thêm float left hoặc right tùy vào layout
+        mình thích cho divcon
+        - lúc này thì các div con đã float nên tk 
+        cha sẽ ko nhìn thấy đám con nữa
+        - nên mình phải thêm clearfix vào divCha để
+        nó ôm một khối giống tk con
+*/
+
+/* demo background 
+.demo1-background{
+    height: 100vh;
+    background-color: red;
+}
+.demo2-background{
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url("./conmeobeo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100% ;
+    background-attachment: fixed  ;
+    /* lưu ý là ko được sử dụng dấu nháy đơn 
+        nên là sài dấu nháy đôi*/
+
+    /* layout 
+    }
+.parent{
+    border: 3px solid black;
+    font-size: 0;
+}
+.left-side{
+    border: 3px solid red;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+.right-side{
+    border: 3px solid blue;
+    display: inline-block   ;
+    font-size: 1.6rem   ;
+    } */
+
+
+/* cách chia layout
+cách 1 :  
+        - set display inline-block cho 2 div con , để chúng nó 
+        chỉ vừa đủ content
+        -hành động này giúp chúng nó lên cùng 1 hàng 
+        - nhưng vì là inline-block nên divCha sẽ xem 2 tk con là 
+        'từ' và sẽ tạo ra khoảng trống ở 2 div
+        ==> cách fix : set font-size ở div cha = 0 để nó tin 
+        rằng nó ko chừa gì cả , sau đó set font-size cho 
+        2 divCon cho nó hiển thị
+
+        nhược điểm : khi dồn các chữ lên , thì giao diện sẽ dồn
+        qua bên trái và sẽ ko dồn bên phải đc == > ko tạo được
+        khoảng cách ở giữa 
+        Không thể chia giao diện (space between)
+*/
+
+/* inline block đc nhìn như là một chữ , mà ở đây , left side và 
+right side thì là 2 chữ nên ở giữa 2 chữ có khoảng cách
+ các fixx ==> cho tk parent font-size = 0 size ==> tk cha ko tháy gì hết
+nên là nó sẽ nhìn thấy được 2 đứa con
+        và đặt cho font-size ở left và right = 1.6rem để làm khoảng cách
+*/
+
+/* dựng layout shoppee */
+.container{
+    border: 3px solid red;
+    height: 27rem;
+    max-width: 1320px;
+    margin: 0 auto ;
+    /* 0 ==> trên dưới ko có gì chả
+    auto ==> tăng margin liên tục  ở trái và phải để vào giữa */
+   /* vì container đang ôm phần tử ôm nên là 2 đứa 
+   kia sẽ ko thấy */
+}
+.leftsidebanner{
+    border: 3px solid blue;
+    width: calc(70% - 5px);
+    height: 100%;
+    float: left ;
+    margin-right: 5px;
+}   
+.rightsidebanner{
+    border: 3px solid blue;
+    width: 30% ;
+    height: 100%;
+    float: right;   
+}   
+.right-side-img{
+    border: 3px solid green ;
+    height: calc(50% - 2.5px);
+
+    /* tự fix  */
+}
+.right-side-img:nth-child(1){
+    margin-bottom :5px;
+}
+.img-block{
+    /* bước 1 : cho bước hình ôm
+        nghĩa là tất cả các ảnh sẽ nằm trọn trong container
+    */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* những tk nằm ngoài khung sẽ vứt hết = xóa */
+}
+/* bản thân img là thẻ inline */
+.img-block img{
+    /* b1 đưa img thành block */
+    display: block;
+    height: 100%;
+    width: 100%;
+}

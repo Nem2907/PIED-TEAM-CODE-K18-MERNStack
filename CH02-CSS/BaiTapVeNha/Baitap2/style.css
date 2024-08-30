@@ -1,0 +1,68 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.menu-layout{
+    border: 3px solid red;
+    background-color: blue;
+    text-indent: 5rem;    
+}
+.menu-layout a{
+    color: white;
+}
+.container{
+    border: 3px solid cyan;
+    height: 20rem;
+}
+.left-side{
+    border: 3px solid darkslateblue;
+    width: 30%;
+    float: left;
+}
+.first-link{
+    border: 3px solid red;
+    background-color: yellow;
+    padding: 1rem;
+}
+.second-link{
+    border: 3px solid red;
+    background-color: gray;
+    padding: 1rem;
+}
+.right-side{
+    border: 3px solid darkslateblue;
+    width : 70%;
+    float : right;
+}
+.first-right-text{
+    border: 3px solid orange;
+    font-family: sans-serif;
+}
+.second-right-text{
+    border: 3px solid orange;
+}
+.left-side-right{
+    border: 3px solid plum;
+    background-color: darkgreen;
+    width: 50%;
+    float: left;
+}
+.right-side-right{
+    border: 3px solid plum;
+    background-color: red;
+    width: 50%;
+    float: right;
+    
+}
+.clearfix::after{       
+    display: block;
+    content: "";
+    clear: both;
+    /* cơ chế : tạo ra phần tử ảo bự = những đứa 
+    bị trôi đi(float) */
+}   

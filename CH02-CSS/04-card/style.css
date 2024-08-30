@@ -1,0 +1,86 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+font{
+    font-size: 1.6rem;
+}
+/* card */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+.card-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* 1320-10(trừ 5 mỗi bên) =1310 /5 =262
+    262-6(trừ margin)= 256 là kích thước của carblock
+*/
+.card_block{
+    width: 25.6rem;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+.card_block:hover{
+    box-shadow: 3px 3px 8px 1px #695e5e;
+
+}
+.card-img{
+    width: 24.8rem;
+    overflow: hidden;
+    /* nếu có phần bị lồi ra ở bức hình 
+    ==> xóa */
+}
+.card-img img{
+    display: block;
+    width: 100%;
+}
+.card-info{
+    margin: 0.3rem 0;
+    /*  */
+    /* nếu cần các vật thể con có khoảng cách vs cha
+    hoặc là dùng trục ngang ==> ưu tiên dùng paddinng
+    còn nếu vật thể khoảng cách với vật thể 
+    ==> dùng margin oke hơn
+    */
+}
+.card_controller{
+    display: flex;
+    justify-content: space-between;
+}
+.card_controller_block{
+    width: calc(50% - 1px);  
+
+}
+.btn-card__controller{
+    display: block;
+    background-color: teal;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: white    ;
+   /*  text-align: center;
+    padding: 0.7rem; */
+}
+.btn-card__controller:hover{
+    background-color: rgb(10, 233, 233);
+}.splide__slide{
+    display: flex;
+    justify-content: center;
+}

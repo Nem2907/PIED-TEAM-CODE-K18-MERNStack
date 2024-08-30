@@ -1,0 +1,75 @@
+.demo-status{
+    color: teal;
+}
+/* đặc điểm : khi sài câu lệnh trên thì 
+cái link vẫn mãi là màu teal 
+nên ta cần sài :active để làm nó đường link  khi nhấn vào thì thành màu xanh
+*/
+.demo-status:active{
+    color: blue !important;
+    /* khi ta gán important vào thì sẽ ưu tiên trước
+    nhưng nếu có 2 đứa cùng cấp thì sẽ ưu tiên thứ tự
+    tính từ dưới lên */
+}
+.demo-status:hover{
+    color :purple;
+ }
+.demo-btn{
+    display: inline-block;
+    border: 1px solid black;
+    /* border : viền có 3 thuộc tính
+    đồ dày , thuộc tính và màu
+    outset ,dotted ,
+    */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding : 10px 15px;
+    /* 10px : top và button
+    
+        20px : left và right*/
+    margin: 10px;
+    transition: 0.3s ;
+    
+    /* độ dày của chữ 
+    kích thước mặc định của font-weight : thin
+    thin là 400
+    bold là 700
+    font-size mặc định là 16px
+    */
+
+    /* một botton có một modelbox gốm có
+    border : đường viền
+    padding : đoạn từ đường viền đến chữ
+    margin : đoàn từ đường ciền đi ra
+    content : nội dung
+    nếu hỏi kích thước của button : từ đường viền đi vào
+    còn nếu hỏi về margin : từ margin đi vào
+
+    công thức của margin : (độ dài tổng - 10) / (400+22)
+    */
+}
+
+.demo-btn:hover{
+    color: white;
+    background-color: black;
+}
+/* model box
+    margin : khoảng cách từ viền so với các vật thể khác
+    border : đường viền
+    padding : khoảng cách từ viền vào content
+    content
+
+    nếu lựa chọn giữa margin và padding thì ngta sẽ chọn padding vì padding dễ chỉnh sửa
+*/
+
+
+/* inline : viền , ko có hộp , ôm hết content chứa bên trong */
+
+ /* theo quy luật : tk nào ở dưới thì tk đó sẽ mạnh hơn */
+
+/*
+:hover : để khi ta lia chuột vào đường link thì nó sẽ có màu 
+*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>bài 2 : tag vô dụng </title>
+    <!-- css -->
+    <style>
+        /*3 cách selector*/
+        p{
+            color: red;
+        }
+        p:nth-child(2){
+            color: blue;
+            /* những đứa p thứ 2 bị đổi thành màu xanh */
+        }
+        /* select theo class */
+        .dacbiet{
+            font-style: italic;
+            /* những tk p có cung gốc class dacbiet sẽ bị đổi thành chữ nghiêng */
+        }
+        .dacbiet2{
+            font-size: 30px;
+        }
+    </style>
+   
+</head>
+<body>
+    <!-- quotations -->
+     <p class="dacbiet">
+        Có người từng nói rằng "một cây làm chẳng nên non 3 cây chụm lại vẫn là 3 cây"
+     </p>
+
+     <p class="dacbiet">
+        Có người từng nói rằng <q class = "dacbiet2">một cây làm chẳng nên non 3 cây chụm lại vẫn là 3 cây</q> 
+     </p>
+     <!-- blockquote  -->
+
+     <!-- abbr : inline -->
+      <p>
+        Công chúa thuộc về <abbr title="Lê Điệp">người đẹp trai nhất</abbr>
+
+        <!-- addres : p + em + bỏ viền : block -->
+        <p>
+            <address>115/13 đường đình phong phú</address>
+        </p>
+
+        <!-- cite -->
+         <p>
+            <cite>tác phẫm này của </cite> viEmVanGood
+         </p>
+
+         <!-- bdo 
+            nếu để rtl : đảo ngược 
+            khi copy thì chữ vẫn giữ nguyên gốc , ko có bị đảo ngược-->
+          <p>
+            <bdo dir="rtl">xin chào bạn</bdo>
+          </p>
+          <!--  -->
+          <p style="background-color: teal;" >demo đổi màu</p>
+      </p>
+</body>
+</html> 

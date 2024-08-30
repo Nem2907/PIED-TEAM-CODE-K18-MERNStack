@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 : layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!-- demo backgound -->
+     <div class="demo1-background"></div>
+     <div class="demo2-background"></div>
+     <!-- layout -->
+      <div class="parent clearfix">
+        <!-- nhớ thêm clearfix -->
+            <div class="left-side">LeftSide</div>
+            <div class="right-side">RightSide</div> 
+      </div>
+      <p>ahahahahah</p>
+
+      <br/>
+      <!-- layout shoppee -->
+      <div class="container clearfix">
+        <div class="leftsidebanner">
+            <div class="img-block">
+                <!-- nên để bức hình ở  trong div 
+                 thì nó mới nén đc bức hình-->
+                <img src="./bannerBu_n.png" alt="">
+            </div>
+            <!-- đặc trung img là phá khối 
+             ==> đừng để hình vào trước -->
+        </div>
+        <div class="rightsidebanner">
+            <div class="right-side-img">
+                <div class="img-block">
+                    <img src="./bannerNho1.png" alt="">
+                </div>
+            </div>
+            <div class="right-side-img">
+                <div class="img-block"><img src="./bannerNho2.png" alt="    ">
+                        </div>
+            </div>
+        </div>
+      </div>
+
+
+     <div style="height: 100vh;"></div>
+</body>
+</html>

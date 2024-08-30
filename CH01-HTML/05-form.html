@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 05 : form - biểu ngữ</title>
+</head>
+<body>
+    <!-- form : biểu mẫu , là cách để thu nhập thông tin của người dùng
+      -->
+    <form action="">
+        <!-- label có 1 attribute : for 
+         -->
+        <div>
+            <label for="username">username</label>
+            <input 
+                id="username " 
+                type="text" 
+                placeholder="Nhập username nhé bạn iu "
+                name ="username"/>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input 
+                id="pwd" 
+                type="password" 
+                placeholder="Nhập password nhé bạn iu "
+                name ="password"/>
+        </div>
+        <!-- name đc để tạo biến -->
+         <!-- form sẽ đc chuyển dữ liệu qua queryString và sẽ gửi lên sever -->
+
+         <!-- Những thẻ input thường hay gặp -->
+          <input type="email"/>
+          <input type="number"/>
+          <input type="range" min="0" max="100" step="2"/>
+          <input type="date"/>
+          <input type="color"/>
+          <input type="file"/>
+          <!-- bản chọn giới tính -->
+           <div>
+                <label for="male">Nam</label>
+                <input id="male" type="radio" name="gender" value="1">
+                <label for="Female">Nữ</label>
+                <input id="Female" type="radio" name="gender" value="2">
+           </div>
+           <!-- select  -->
+            <select name="car" id="car">
+                <option value="1">BMW</option>
+                <option value="2"selected>Audi</option>
+                <option value="3">Mec</option>
+            </select>
+            <!-- textarea -->
+             <textarea style="min-width: 200px; max-width: 200px;"></textarea>
+             <!-- thẻ vô dụng -->
+              <!-- fieldset -->
+               <fieldset>
+                    <legend>Hello</legend>
+                    <p>Xin chào các bạn</p>
+               </fieldset>
+               <!-- checkbox -->
+             
+        <button type="submit">Gửi</button>
+    </form>    
+</body>
+</html>

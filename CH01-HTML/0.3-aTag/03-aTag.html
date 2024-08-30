@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 03 : a Tag Hacking </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- tagret : redirect
+     # là id -->
+     <!-- thẻ a display : inline
+      inline và block 
+      inline có thêm viền , chiếm trọn 1 hàng như tk block và ôm trọn content
+      -->
+    <a href="#abcde">Click me </a>
+    <br />
+    <!-- link status(pseudo class) 
+        bắt buộc phải học -->
+
+        <!-- thẻ a sẽ màu xanh nếu mình chưa bấm vào lần nào
+            hay còn gọi là unvisited : chưa bấm vào , chưa ghé thăm
+            ngoài ra còn có các trạng thái :
+            active : đang đè chuột vào đường link (màu đỏ)
+            visited : đã truy cập (purple)
+            hover : đưa chuột vào (none) 
+            tổng là 4 trạng thái
+            đặc trưng : ở thẻ a sẽ có unvisited và visited
+            còn những đặc tính còn lại hầu hết đều có ở mọi thẻ
+            -->
+    <!-- tạo một class để phân biệt nhiều thẻ khác nhau
+     trong ví  dụ này là thẻ a -->
+    <a class="demo-status" href="#" >Click me!</a>
+    <!-- button : nút -->
+     <br/>
+     <button>Nút nè</button>
+     <br/>
+     <!-- thông thường thì ta sẽ sài thẻ a để cosplay button 
+      vì thẻ a có href -->
+      <a class="demo-btn" href="mailto:hoangnamlongho@gmail.com">Send nude</a>
+            
+      <a href="https://vi.wikipedia.org/wiki/T%C6%B0_b%E1%BA%A3n">
+        <img src="./images (1).jpg" alt="hình đẹp">
+      </a>
+</body>
+</html

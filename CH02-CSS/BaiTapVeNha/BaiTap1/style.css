@@ -1,0 +1,46 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem;
+}
+.clearfix::after{   
+    display: block;
+    content: "";
+    clear: both;
+}
+.option{
+    font-size: 1.8rem;
+    background-color: burlywood;
+    font-family: sans-serif ;
+}
+.left-Side{
+    border: 3px solid green;
+    background-color: green;
+    width: 80%;
+    float: left;
+    height: 20rem;
+}
+.right-Side{
+    border: 3px solid plum;
+    background-color: plum;
+    padding: 1rem;
+    width: 20%;
+    float: right; 
+    height: 20rem;
+}
+.text{
+    font-size: 1.6rem;
+}
+.link-name a{
+    text-indent: 3rem;
+}
+.footer{
+    background-color: antiquewhite;
+}

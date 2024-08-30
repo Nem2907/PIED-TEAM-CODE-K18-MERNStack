@@ -1,0 +1,116 @@
+/* khái niệm về reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing : thay vì ta phải tính padding và border để tính khối content
+    thì box-sizing sẽ tự động tính toán sẵn cho chúng ta
+    .demo-text{
+    border: 2px solid red;
+    width: 200px;
+}   
+    do đó khi có câu lệnh trên , thay vì cần phải lấy 200-4(2 cạnh 2 bên = 2) =196 
+    thì máy sẽ tự động đưa cho ta kết quả sao cho phù hợp với những gì ta đặt 
+    */
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* LƯU Ý 
+    Trong giao diện trong css luôn có 3 tk này
+
+*/
+/* không được để số cứng vì để để số cứng thì sẽ làm cho giao diện bị bễ + nhỏ xuống 
+nên ta dùng % để nhân vào để tạo thành 1 số có thể nhân vào thay vi để một số ở đó và giữ nguyên
+ */
+/* dấu * là tất cả */
+/* khái niệm về unit size 
+    px | mm | cm
+    % : ăn theo thằng cha (khó sài , làm quen với nó sẽ mất khá lâu)
+    em: coi font-size của tk cha là một đơn vị(phức tạp)
+        ==> 1 em = font-size (nhưng ko có sài)
+    rem:coi font-size của html là 1 đơn vị (mạnh nhất + nhiều người sài nhất)
+    font-size : 16px đc cấp bởi trình duyệt của chúng ta
+*/
+
+/* outline 
+    nó nằm bên ngoài 
+    nếu border tăng thì content bị đẩy
+    nếu outline tăng thì vật thể , content sẽ ko bị ảnh hưởng
+*/
+.demo-input{
+    outline: none ;
+    margin: 2rem;
+    /* 2rem = 10 */
+    padding: 1rem;
+    border: 2px solid red;
+    /* border ko nên sài rem vì nó khá xấu */
+    outline: 2px solid blue;
+    outline-offset: 1rem;   
+}
+/* bề ngang , bề rộng ,margin , padding bắt buộc dùng rem */
+
+/* border */
+.demo-border{
+    border: 3px solid teal;
+    /* độ dài kiểu màu */
+    border-style: solid;
+    border-top: 3px solid red;
+    border-left: 3px solid yellow;
+    border-right: 3px solid blue;
+    border-bottom: 3px solid rebeccapurple;
+}
+/* circle */
+
+.circle{
+    height: 30rem;
+    width: 30rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.triangle{
+    border: 3px solid red;
+    height: 15rem;
+    width: 15rem;
+    border-top: 7.5rem solid transparent;
+    border-left: 7.5rem solid transparent;
+    border-right: 7.5rem solid transparent;
+    border-bottom: 7.5rem solid rebeccapurple;
+
+    /* transparent : màu trong suốt */
+}
+/* 
+muốn tạo ra hình tròn : 
++B1 : tạo hình vuông
+*/
+
+/* hãy nhớ : khi phóng to chữ lên thì bễ giao diện ==> phải làm sao khắc phục */
+/* demo-text */
+.demo-text{
+    color: steelblue;
+    background-color: bisque;
+    font-size: 3rem;
+    /*     direction: rtl; */
+    text-decoration: underline solid chartreuse;
+    /* overline , underline  */
+    text-indent: 3rem;
+    /* thêm khoảng cách  */
+     /*letter-spacing: 1rem;    */
+    /* khoảng cách chữ */
+    line-height: 10rem;
+    /* chiều cao của dòng 
+    chiều cao mặc đính là 18px */
+    font-weight: 700;
+    /* độ dài của chữ 
+    giới hạn từ 400 - 700 */
+    font-style: italic;
+    text-shadow: 1px 1px 1px black;
+}
+.demo-text span{
+    vertical-align: sub;
+    /* mặc định của nó là top */
+}
